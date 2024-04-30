@@ -27,12 +27,12 @@ class Perceptron:
 
 #test code
 neuron = Perceptron(inputs=2)
-neuron.set_weights([-10,10,-15]) #AND
+neuron.set_weights([10,10,-15]) #AND
 
 # Challenge: Write your OR weights
 
 print("Gate:")
-print ("0 0 = {0:.10f}".format(neuron.run([0,0])))
-print ("0 1 = {0:.10f}".format(neuron.run([0,1])))
-print ("1 0 = {0:.10f}".format(neuron.run([1,0])))
-print ("1 1 = {0:.10f}".format(neuron.run([1,1])))
+print ("0 0 = {0:.1f}".format(neuron.run([0,0])))
+print ("0 1 = {0:.1f}".format(neuron.run([0,1])))
+print ("1 0 = {0:.1f}".format(neuron.run([1,0])))
+print ("1 1 = {0:.1f}".format(neuron.run([1,1])))
